@@ -6,13 +6,16 @@ let scene;
 let camera;
 let renderer;
 let controls;
-
 let loader;
+
 let object;
+let time;
+let startingY;
 
 let navButtons;
 
 const setup = () => {
+  time = 0;
   // scene
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0xa0a0a0);
@@ -79,7 +82,7 @@ const modelMap = {
   },
 };
 
-export const createObject = (modelID) => {
+const createObject = (modelID) => {
   navButtons.forEach((button) => {
     button.parentElement.classList.remove("current");
     if (button.dataset.id === modelID) {
@@ -102,7 +105,7 @@ export const createObject = (modelID) => {
           node.scale.set(scale, scale, scale);
         }
       });
-      object.translateY(offset);
+      startingY = offset;
       object.rotation.y = startingRotation;
       scene.add(object);
       camera.lookAt(object);
@@ -117,12 +120,19 @@ export const createObject = (modelID) => {
 
 const animate = () => {
   requestAnimationFrame(animate);
-  renderer.render(scene, camera);
   controls.update();
+
+  const upDownOffset = Math.sin(time);
 
   if (object) {
     object.rotation.y += 0.01;
+    object.position.y = startingY + upDownOffset;
   }
+
+  time += 0.01;
+  time %= Math.PI * 2;
+
+  renderer.render(scene, camera);
 };
 
 const resize = () => {
