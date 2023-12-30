@@ -10,6 +10,8 @@ let controls;
 let loader;
 let object;
 
+let navButtons;
+
 const setup = () => {
   // scene
   scene = new THREE.Scene();
@@ -25,7 +27,7 @@ const setup = () => {
   camera.position.set(0, 4, 7);
 
   // renderer
-  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer = new THREE.WebGLRenderer({ antialias: false });
 
   // enabling shadows
   renderer.shadowMap.enabled = true;
@@ -70,11 +72,23 @@ const modelMap = {
     offset: -1,
     startingRotation: 3.3,
   },
+  1: {
+    url: "/public/crate.gltf",
+    offset: -1,
+    scale: 2,
+  },
 };
 
 export const createObject = (modelID) => {
-  const { url, offset, startingRotation } =
-    modelMap[modelID] ?? modelMap.default;
+  navButtons.forEach((button) => {
+    button.parentElement.classList.remove("current");
+    if (button.dataset.id === modelID) {
+      button.parentElement.classList.add("current");
+    }
+  });
+
+  const model = modelMap[modelID] ?? modelMap.default;
+  const { url, offset = 0, startingRotation = 0, scale = 1 } = model;
   loader.load(
     url,
     function (gltf) {
@@ -85,6 +99,7 @@ export const createObject = (modelID) => {
       gltf.scene.traverse(function (node) {
         if (node.isMesh) {
           node.castShadow = true;
+          node.scale.set(scale, scale, scale);
         }
       });
       object.translateY(offset);
@@ -118,25 +133,32 @@ const resize = () => {
 };
 
 const setupNav = () => {
-  const buttons = document.querySelectorAll(".Nav__button");
-  buttons.forEach((button) => {
+  navButtons = document.querySelectorAll(".Nav__button");
+  navButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const id = this.dataset.id;
       createObject(id);
-      buttons.forEach((button) => {
-        button.parentElement.classList.remove("current");
-      });
-      button.parentElement.classList.add("current");
+      history.pushState(null, null, `?day=${id}`);
     });
   });
+};
+
+const checkForDay = () => {
+  const search = window.location.search;
+  const match = /day=(\d+)/.exec(search);
+  if (match && match[1]) {
+    createObject(match[1]);
+  }
 };
 
 document.addEventListener("DOMContentLoaded", () => {
   setupNav();
   setup();
   createObject();
-  animate();
 
+  checkForDay();
+
+  animate();
   window.addEventListener("resize", () => {
     resize();
   });
