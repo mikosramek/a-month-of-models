@@ -14,7 +14,7 @@ Completion
 | Day | What is it      | File                                                      |
 | --- | --------------- | --------------------------------------------------------- |
 | 0   | A question mark | [/public/question-mark.gltf](./public/question-mark.gltf) |
-| 1   | ?               | ?                                                         |
+| 1   | Crate           | [/public/crate.gltf](./public/crate.gltf)                 |
 | 2   | ?               | ?                                                         |
 | 3   | ?               | ?                                                         |
 | 4   | ?               | ?                                                         |
