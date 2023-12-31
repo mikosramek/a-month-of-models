@@ -131,6 +131,7 @@ table {
 body {
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #0e0e0e;
 }
 
 .Menu {
@@ -234,4 +235,45 @@ ul {
 }
 .Nav__item.current::after {
   opacity: 1;
+}
+
+.Info {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.Info__title {
+  font-size: 24px;
+}
+.Info__date {
+  padding: 5px 0;
+  font-size: 18px;
+  color: #444;
+}
+.Info__description {
+  font-size: 18px;
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 1080px) {
+  nav {
+    left: 0;
+    justify-content: start;
+    bottom: 5px;
+  }
+
+  ul {
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: none;
+  }
+  .Nav__item {
+    width: calc(100% / 8);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 }

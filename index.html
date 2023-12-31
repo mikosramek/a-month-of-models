@@ -16,10 +16,19 @@
     </script>
   </head>
   <body>
+    <script type="module" src="/models.js"></script>
     <script type="module" src="/scene.js"></script>
     <header class="Menu">
+      <div class="Info">
+        <h1 class="Info__title" id="title"></h1>
+        <p class="Info__date" id="date"></p>
+        <p class="Info__description" id="description"></p>
+      </div>
       <nav>
         <ul>
+          <li class="Nav__item">
+            <button data-id="info" class="Nav__button">Info</button>
+          </li>
           <li class="Nav__item">
             <button data-id="1" class="Nav__button">1</button>
           </li>

@@ -2,6 +2,8 @@ import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { OrbitControls } from "https://unpkg.com/three/examples/jsm/controls/OrbitControls.js";
 
+import modelData from "./models.js";
+
 let scene;
 let camera;
 let renderer;
@@ -13,6 +15,9 @@ let time;
 let startingY;
 
 let navButtons;
+let title;
+let description;
+let date;
 
 const setup = () => {
   time = 0;
@@ -69,34 +74,10 @@ const setup = () => {
   scene.add(light);
 };
 
-const modelMap = {
-  default: {
-    url: "/public/question-mark.gltf",
-    offset: -1,
-    startingRotation: 3.3,
-  },
-  load: {
-    url: "/public/info-board.gltf",
-    scale: 1.5,
-    startingRotation: -0.6,
-  },
-  1: {
-    url: "/public/crate.gltf",
-    offset: -1,
-    scale: 2,
-  },
-};
-
 const createObject = (modelID) => {
-  navButtons.forEach((button) => {
-    button.parentElement.classList.remove("current");
-    if (button.dataset.id === modelID) {
-      button.parentElement.classList.add("current");
-    }
-  });
-
-  const model = modelMap[modelID] ?? modelMap.default;
+  const model = modelData[modelID] ?? modelData.default;
   const { url, offset = 0, startingRotation = 0, scale = 1 } = model;
+
   loader.load(
     url,
     function (gltf) {
@@ -115,12 +96,32 @@ const createObject = (modelID) => {
       scene.add(object);
       camera.lookAt(object);
       controls.update();
+
+      updateUI(modelID, model);
     },
     undefined,
     function (error) {
       console.error(error);
     }
   );
+};
+
+const updateUI = (id, model) => {
+  navButtons.forEach((button) => {
+    button.parentElement.classList.remove("current");
+    if (button.dataset.id === id) {
+      button.parentElement.classList.add("current");
+    }
+  });
+  const {
+    title: titleCopy = "",
+    description: descriptionCopy = "",
+    date: dateCopy = "",
+  } = model;
+
+  title.innerText = titleCopy;
+  description.innerText = descriptionCopy;
+  date.innerText = dateCopy;
 };
 
 const animate = () => {
@@ -156,6 +157,10 @@ const setupNav = () => {
       history.pushState(null, null, `?day=${id}`);
     });
   });
+
+  title = document.querySelector("#title");
+  description = document.querySelector("#description");
+  date = document.querySelector("#date");
 };
 
 const checkForDay = () => {
@@ -169,7 +174,7 @@ const checkForDay = () => {
 document.addEventListener("DOMContentLoaded", () => {
   setupNav();
   setup();
-  createObject("load");
+  createObject("info");
 
   checkForDay();
 
