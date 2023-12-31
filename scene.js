@@ -75,6 +75,11 @@ const modelMap = {
     offset: -1,
     startingRotation: 3.3,
   },
+  load: {
+    url: "/public/info-board.gltf",
+    scale: 1.5,
+    startingRotation: -0.6,
+  },
   1: {
     url: "/public/crate.gltf",
     offset: -1,
@@ -164,7 +169,7 @@ const checkForDay = () => {
 document.addEventListener("DOMContentLoaded", () => {
   setupNav();
   setup();
-  createObject();
+  createObject("load");
 
   checkForDay();
 
