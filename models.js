@@ -24,4 +24,11 @@ export default {
     description: "A wooden crate with a label.",
     date: "30/12/2023",
   },
+  2: {
+    url: "/public/barrel.gltf",
+    title: "Barrel",
+    description: "A barrel, painted an enticing red.",
+    date: "02/01/2024",
+    scale: 1.5,
+  },
 };
