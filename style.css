@@ -215,6 +215,10 @@ ul {
   transition: transform 0.1s ease-out;
 }
 
+.Nav__button--wip {
+  color: #888;
+}
+
 .Nav__item {
   position: relative;
 }
