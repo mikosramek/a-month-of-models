@@ -31,4 +31,10 @@ export default {
     date: "02/01/2024",
     scale: 1.5,
   },
+  3: {
+    url: "/public/pigeon.gltf",
+    title: "Pigeon",
+    description: "A typcial city Pigeon.",
+    date: "03/01/2024",
+  },
 };
