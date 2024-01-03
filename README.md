@@ -15,8 +15,8 @@ Completion
 | --- | --------------- | --------------------------------------------------------- |
 | 0   | A question mark | [/public/question-mark.gltf](./public/question-mark.gltf) |
 | 1   | Crate           | [/public/crate.gltf](./public/crate.gltf)                 |
-| 2   | ?               | ?                                                         |
-| 3   | ?               | ?                                                         |
+| 2   | Barrel          | [/public/barrel.gltf](./public/barrel.gltf)               |
+| 3   | Pigeon          | [/public/pigeon.gltf](./public/pigeon.gltf)               |
 | 4   | ?               | ?                                                         |
 | 5   | ?               | ?                                                         |
 | 6   | ?               | ?                                                         |
