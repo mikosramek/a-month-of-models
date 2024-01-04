@@ -11,36 +11,37 @@ Near the end of December 2023, I picked up [PicoCad](https://johanpeitz.itch.io/
 Completion
 ![](https://geps.dev/progress/0)
 
-| Day | What is it      | File                                                      |
-| --- | --------------- | --------------------------------------------------------- |
-| 0   | A question mark | [/public/question-mark.gltf](./public/question-mark.gltf) |
-| 1   | Crate           | [/public/crate.gltf](./public/crate.gltf)                 |
-| 2   | Barrel          | [/public/barrel.gltf](./public/barrel.gltf)               |
-| 3   | Pigeon          | [/public/pigeon.gltf](./public/pigeon.gltf)               |
-| 4   | ?               | ?                                                         |
-| 5   | ?               | ?                                                         |
-| 6   | ?               | ?                                                         |
-| 7   | ?               | ?                                                         |
-| 8   | ?               | ?                                                         |
-| 9   | ?               | ?                                                         |
-| 10  | ?               | ?                                                         |
-| 11  | ?               | ?                                                         |
-| 12  | ?               | ?                                                         |
-| 13  | ?               | ?                                                         |
-| 14  | ?               | ?                                                         |
-| 16  | ?               | ?                                                         |
-| 17  | ?               | ?                                                         |
-| 18  | ?               | ?                                                         |
-| 19  | ?               | ?                                                         |
-| 20  | ?               | ?                                                         |
-| 21  | ?               | ?                                                         |
-| 22  | ?               | ?                                                         |
-| 23  | ?               | ?                                                         |
-| 24  | ?               | ?                                                         |
-| 25  | ?               | ?                                                         |
-| 26  | ?               | ?                                                         |
-| 27  | ?               | ?                                                         |
-| 28  | ?               | ?                                                         |
-| 29  | ?               | ?                                                         |
-| 30  | ?               | ?                                                         |
-| 31  | ?               | ?                                                         |
+| Day | What is it        | File                                                      |
+| --- | ----------------- | --------------------------------------------------------- |
+| 0   | A question mark   | [/public/question-mark.gltf](./public/question-mark.gltf) |
+| 0   | Information Board | [/public/info-board.gltf](./public/info-board.gltf)       |
+| 1   | Crate             | [/public/crate.gltf](./public/crate.gltf)                 |
+| 2   | Barrel            | [/public/barrel.gltf](./public/barrel.gltf)               |
+| 3   | Pigeon            | [/public/pigeon.gltf](./public/pigeon.gltf)               |
+| 4   | Radio             | [/public/radio.gltf](./public/radio.gltf)                 |
+| 5   | ?                 | ?                                                         |
+| 6   | ?                 | ?                                                         |
+| 7   | ?                 | ?                                                         |
+| 8   | ?                 | ?                                                         |
+| 9   | ?                 | ?                                                         |
+| 10  | ?                 | ?                                                         |
+| 11  | ?                 | ?                                                         |
+| 12  | ?                 | ?                                                         |
+| 13  | ?                 | ?                                                         |
+| 14  | ?                 | ?                                                         |
+| 16  | ?                 | ?                                                         |
+| 17  | ?                 | ?                                                         |
+| 18  | ?                 | ?                                                         |
+| 19  | ?                 | ?                                                         |
+| 20  | ?                 | ?                                                         |
+| 21  | ?                 | ?                                                         |
+| 22  | ?                 | ?                                                         |
+| 23  | ?                 | ?                                                         |
+| 24  | ?                 | ?                                                         |
+| 25  | ?                 | ?                                                         |
+| 26  | ?                 | ?                                                         |
+| 27  | ?                 | ?                                                         |
+| 28  | ?                 | ?                                                         |
+| 29  | ?                 | ?                                                         |
+| 30  | ?                 | ?                                                         |
+| 31  | ?                 | ?                                                         |

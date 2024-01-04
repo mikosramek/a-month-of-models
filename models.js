@@ -36,5 +36,13 @@ export default {
     title: "Pigeon",
     description: "A typcial city Pigeon.",
     date: "03/01/2024",
+    scale: 1.2,
+  },
+  4: {
+    url: "/public/radio.gltf",
+    title: "Radio",
+    description: "An old wooden radio.",
+    date: "04/01/2024",
+    scale: 2,
   },
 };
