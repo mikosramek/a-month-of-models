@@ -45,4 +45,11 @@ export default {
     date: "04/01/2024",
     scale: 2,
   },
+  5: {
+    url: "/public/hotdog.gltf",
+    title: "Hotdog",
+    description: "A plain hotdog.",
+    date: "05/01/2024",
+    scale: 0.75,
+  },
 };

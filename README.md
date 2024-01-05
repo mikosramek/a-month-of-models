@@ -9,7 +9,7 @@ Near the end of December 2023, I picked up [PicoCad](https://johanpeitz.itch.io/
 ## Models
 
 Completion
-![](https://geps.dev/progress/0)
+![](https://geps.dev/progress/16)
 
 | Day | What is it        | File                                                      |
 | --- | ----------------- | --------------------------------------------------------- |
@@ -19,7 +19,7 @@ Completion
 | 2   | Barrel            | [/public/barrel.gltf](./public/barrel.gltf)               |
 | 3   | Pigeon            | [/public/pigeon.gltf](./public/pigeon.gltf)               |
 | 4   | Radio             | [/public/radio.gltf](./public/radio.gltf)                 |
-| 5   | ?                 | ?                                                         |
+| 5   | Hotdog            | [/public/hotdog.gltf](./public/hotdog.gltf)               |
 | 6   | ?                 | ?                                                         |
 | 7   | ?                 | ?                                                         |
 | 8   | ?                 | ?                                                         |
