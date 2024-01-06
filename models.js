@@ -52,4 +52,11 @@ export default {
     date: "05/01/2024",
     scale: 0.75,
   },
+  6: {
+    url: "/public/loaf.gltf",
+    title: "loaf",
+    description: "A pigeon's worst best friend.",
+    date: "06/01/2024",
+    scale: 0.75,
+  },
 };
