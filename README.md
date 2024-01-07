@@ -21,7 +21,7 @@ Completion
 | 4   | Radio             | [radio.gltf](./public/radio.gltf)                 |
 | 5   | Hotdog            | [hotdog.gltf](./public/hotdog.gltf)               |
 | 6   | Loaf              | [loaf.gltf](./public/loaf.gltf)                   |
-| 7   | ?                 | ?                                                 |
+| 7   | TARDIS            | [tardis.gltf](./public/tardis.gltf)               |
 | 8   | ?                 | ?                                                 |
 | 9   | ?                 | ?                                                 |
 | 10  | ?                 | ?                                                 |

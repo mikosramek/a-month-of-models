@@ -59,4 +59,11 @@ export default {
     date: "06/01/2024",
     scale: 0.75,
   },
+  7: {
+    url: "/public/tardis.gltf",
+    title: "TARDIS",
+    description: "A blue police box.",
+    date: "07/01/2024",
+    scale: 0.8,
+  },
 };
