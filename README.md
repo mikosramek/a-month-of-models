@@ -22,7 +22,7 @@ Completion
 | 5   | Hotdog            | [hotdog.gltf](./public/hotdog.gltf)               |
 | 6   | Loaf              | [loaf.gltf](./public/loaf.gltf)                   |
 | 7   | TARDIS            | [tardis.gltf](./public/tardis.gltf)               |
-| 8   | ?                 | ?                                                 |
+| 8   | Half-loaf         | [half-loaf.gltf](./public/half-loaf.gltf)         |
 | 9   | ?                 | ?                                                 |
 | 10  | ?                 | ?                                                 |
 | 11  | ?                 | ?                                                 |

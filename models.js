@@ -66,4 +66,10 @@ export default {
     date: "07/01/2024",
     scale: 0.8,
   },
+  8: {
+    url: "/public/half-loaf.gltf",
+    title: "loaf",
+    description: "Half a pigeon's worst best friend.",
+    date: "08/01/2024",
+  },
 };
