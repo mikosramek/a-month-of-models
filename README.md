@@ -23,7 +23,7 @@ Completion
 | 6   | Loaf              | [loaf.gltf](./public/loaf.gltf)                   |
 | 7   | TARDIS            | [tardis.gltf](./public/tardis.gltf)               |
 | 8   | Half-loaf         | [half-loaf.gltf](./public/half-loaf.gltf)         |
-| 9   | ?                 | ?                                                 |
+| 9   | Street            | [street.gltf](./public/street.gltf)               |
 | 10  | ?                 | ?                                                 |
 | 11  | ?                 | ?                                                 |
 | 12  | ?                 | ?                                                 |

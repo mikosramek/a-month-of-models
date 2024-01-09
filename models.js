@@ -54,7 +54,7 @@ export default {
   },
   6: {
     url: "/public/loaf.gltf",
-    title: "loaf",
+    title: "Loaf",
     description: "A pigeon's worst best friend.",
     date: "06/01/2024",
     scale: 0.75,
@@ -68,8 +68,15 @@ export default {
   },
   8: {
     url: "/public/half-loaf.gltf",
-    title: "loaf",
+    title: "Half Loaf",
     description: "Half a pigeon's worst best friend.",
     date: "08/01/2024",
+  },
+  9: {
+    url: "/public/street.gltf",
+    title: "Street",
+    description: "A bricked up street facade.",
+    date: "09/01/2024",
+    offset: -2,
   },
 };
